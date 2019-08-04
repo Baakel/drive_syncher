@@ -10,8 +10,9 @@ from googleapiclient.http import MediaFileUpload, MediaIoBaseDownload
 import auth
 
 SCOPES = ['https://www.googleapis.com/auth/drive']
+token_path = '/home/baakel/PycharmProjects/drive_project/'
 
-authInstance = auth.auth(SCOPES)
+authInstance = auth.auth(SCOPES, token_path)
 
 creds = authInstance.getCredentials()
 
