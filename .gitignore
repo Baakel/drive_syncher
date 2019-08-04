@@ -1,0 +1,7 @@
+*.pickle
+.idea/*
+__pycache__/*
+*.jpeg
+*.jpg
+venv/*
+*.json
