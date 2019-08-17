@@ -8,6 +8,7 @@ from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
 from googleapiclient.http import MediaFileUpload, MediaIoBaseDownload
 import auth
+from datetime import datetime
 
 SCOPES = ['https://www.googleapis.com/auth/drive']
 token_path = '/home/baakel/PycharmProjects/drive_project/'
@@ -129,7 +130,7 @@ def synchro(path, drive_id):
     for file in files_in_comp:
         uploadFile(file, f'{path}{file}', 'image/', drive_id)
 
-    print(f'Synchronization for {drive_id} finished')
+    print(f'Synchronization for {drive_id} finished at {datetime.now()}')
 
 # getBgImages()
 # searchFile(50, "name contains 'Bg'")
