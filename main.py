@@ -139,9 +139,11 @@ def synchro(path, drive_id):
 phone_folder_id = '0B1hcvlfr-rD-OGM2Zmp4b3hSeWs'
 bg_folder_id = '0B1hcvlfr-rD-TXFlWWNKdFJyMnM'
 test_api_folder_id = '1izt4ar8QAtoDcbpa_ssO8s9dJXdoqGhq'
+ref_api_folder_id = '1Gtck3yl4EoRd0cjhcCkAvoTrnjQwxBsE'
 bg_path = '/home/baakel/Drive/Bg/'
 phone_path = '/home/baakel/Drive/Phone/'
 test_path = '/home/baakel/Drive/test/'
+ref_path = '/home/baakel/Drive/Reference/'
 
 # getBgImages(test_api_folder_id)
 # searchFile(10, "name contains 'aku'")
@@ -150,4 +152,5 @@ test_path = '/home/baakel/Drive/test/'
 if __name__ == '__main__':
     synchro(phone_path, phone_folder_id)
     synchro(bg_path, bg_folder_id)
+    synchro(ref_path, ref_api_folder_id)
     # synchro(test_path, test_api_folder_id)
