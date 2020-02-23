@@ -140,10 +140,12 @@ phone_folder_id = '0B1hcvlfr-rD-OGM2Zmp4b3hSeWs'
 bg_folder_id = '0B1hcvlfr-rD-TXFlWWNKdFJyMnM'
 test_api_folder_id = '1izt4ar8QAtoDcbpa_ssO8s9dJXdoqGhq'
 ref_api_folder_id = '1Gtck3yl4EoRd0cjhcCkAvoTrnjQwxBsE'
+draw_api_folder_id = '1ZCcFvtJmoW85h7Al7UYxxM8e57DJ0nyv'
 bg_path = '/home/baakel/Drive/Bg/'
 phone_path = '/home/baakel/Drive/Phone/'
 test_path = '/home/baakel/Drive/test/'
 ref_path = '/home/baakel/Drive/Reference/'
+draw_path = '/home/baakel/Drive/Drawings/'
 
 # getBgImages(test_api_folder_id)
 # searchFile(10, "name contains 'aku'")
@@ -153,4 +155,5 @@ if __name__ == '__main__':
     synchro(phone_path, phone_folder_id)
     synchro(bg_path, bg_folder_id)
     synchro(ref_path, ref_api_folder_id)
+    synchro(draw_path, draw_api_folder_id)
     # synchro(test_path, test_api_folder_id)
