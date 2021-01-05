@@ -1,4 +1,4 @@
-#!/home/baakel/PycharmProjects/drive_project/venv/bin/python
+#!/home/baakel/scripts/drive_syncher/venv/bin/python
 from __future__ import print_function
 import io, os
 import pickle
@@ -11,7 +11,7 @@ import auth
 from datetime import datetime
 
 SCOPES = ['https://www.googleapis.com/auth/drive']
-token_path = '/home/baakel/PycharmProjects/drive_project/'
+token_path = '/home/baakel/scripts/drive_syncher/'
 
 authInstance = auth.auth(SCOPES, token_path)
 
